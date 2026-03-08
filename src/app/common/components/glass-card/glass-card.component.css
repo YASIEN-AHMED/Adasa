@@ -1,0 +1,20 @@
+.glass-card {
+  background-color: #161614;
+  border: 1px rgb(38, 38, 38) solid;
+  border-radius: 18px;
+  padding: 18px 20px;
+  transition:
+    transform 0.25s ease-out,
+    box-shadow 0.25s ease-out,
+    border-color 0.25s ease-out,
+    background-color 0.25s ease-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(18px);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(249, 115, 22, 0.6);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.75);
+  background-color: #181716;
+}

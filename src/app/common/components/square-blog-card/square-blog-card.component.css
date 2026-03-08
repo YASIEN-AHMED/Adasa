@@ -1,0 +1,139 @@
+.blog-badge {
+  background: rgba(10, 10, 10, 0.85);
+  width: fit-content;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  top: 14px;
+  right: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  i {
+    font-size: 9px;
+  }
+}
+.badge-blog-info {
+  background-color: #ff69001a;
+  border: 1px solid #ff690033;
+  border-radius: 12px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  span {
+    color: var(--color-orange-500);
+  }
+}
+
+.badge-time-to-read {
+  font-size: 14px;
+  i {
+    font-size: 10px;
+  }
+}
+.blog-avatar-icon {
+  width: 48px;
+  height: 48px;
+}
+.read-post-btn {
+  span {
+    transition: all 0.3s;
+    color: oklch(70.5% 0.213 47.604);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  i {
+    color: oklch(70.5% 0.213 47.604);
+    font-size: 14px;
+  }
+}
+.square-blog-card {
+  cursor: pointer;
+  border: 1px solid #161616;
+  border-radius: 24px;
+  overflow: hidden;
+  background: radial-gradient(circle at top left, #111111, #050505);
+  transition:
+    transform 0.25s ease-out,
+    box-shadow 0.25s ease-out,
+    border-color 0.25s ease-out,
+    background 0.25s ease-out;
+  .blog-link-btn {
+    border: 1px solid #ff690033;
+    transition:
+      background-color 0.25s ease-out,
+      border-color 0.25s ease-out,
+      transform 0.25s ease-out;
+    background-color: #ff69001a;
+    width: 32px;
+    height: 32px;
+    i {
+      transition: color 0.25s ease-out;
+    }
+  }
+  &:hover {
+    .blog-link-btn {
+      background-color: var(--color-orange-500);
+      border-color: transparent;
+      transform: translateX(-4px);
+      i {
+        color: white;
+      }
+    }
+    transform: translateY(-6px);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.85);
+    .card-banner {
+      transform: scale(1.1);
+    }
+    h2 {
+      color: var(--color-orange-500);
+    }
+    .read-post-text {
+      transform: translateX(10px) !important;
+    }
+    .blog-img-overlay {
+      opacity: 1;
+    }
+  }
+}
+.card-info {
+  background-color: rgba(22, 22, 22, 0.96);
+  padding: 24px;
+}
+.card-header {
+  transition: 0.3s all;
+  font-size: 30px;
+  font-weight: bold;
+}
+img {
+  transition: transform 0.7s ease-out;
+}
+.online-signture {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -4px;
+  bottom: -4px;
+  border: 1px solid #161616;
+  background-color: var(--color-orange-500);
+}
+.author-info {
+  border-top: 1px solid #262626;
+  .author {
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.blog-img-overlay {
+  transition: all 0.5s;
+  background: linear-gradient(to top, #00000080, transparent, transparent);
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
